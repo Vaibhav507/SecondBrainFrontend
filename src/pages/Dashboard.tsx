@@ -19,7 +19,7 @@ function Dashboard() {
       <Sidebar />
       <div className="p-4 ml-72 h-screen bg-gray-100 flex flex-col gap-8">
         <div className="flex justify-between items-center">
-          All Notes
+          <p>All Notes</p>
           <div className="flex gap-4 justify-center items-center">
             <Button variant='secondary'  startIcon={<ShareIcon />} text='Share Brain' />
             <Button variant='primary' startIcon={<PlusIcon />} text='Add Content' onClick={()=>{ setModalOpen(true); }} />
