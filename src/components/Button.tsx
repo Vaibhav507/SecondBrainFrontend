@@ -12,7 +12,7 @@ const variantStyles = {
     "secondary": "bg-blue-500 text-blue-200"
 }
 
-const defaultStyles = "flex jsutify-center items-center gap-2 rounded-md px-4 py-2"
+const defaultStyles = "flex justify-center items-center gap-2 rounded-md px-4 py-2 min-w-fit w-full"
 
 const Button = ( {variant, text, startIcon, onClick}: ButtonProps ) => {
   return (

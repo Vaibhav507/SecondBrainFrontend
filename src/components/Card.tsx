@@ -1,5 +1,7 @@
 import { ShareIcon } from "../icons/ShareIcon";
 import { TrashIcon } from "../icons/TrashIcon";
+import { XIcon } from "../icons/XIcon";
+import { YoutubeIcon } from "../icons/YoutubeIcon";
 
 interface CardProps {
     title: string,
@@ -16,7 +18,8 @@ const Card = ({ title, link, type }: CardProps) => {
             <div className="flex justify-between items-center w-full">
                 <div className="flex gap-1 justify-center items-center text-md">
                     <div className="text-gray-600">
-                        <ShareIcon />
+                    {type === "twitter" && <XIcon />}
+                    {type === "youtube" && <YoutubeIcon />}
                     </div>
                     {title}
                 </div>
